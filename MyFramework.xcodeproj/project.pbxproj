@@ -17,6 +17,7 @@
 		01FAF1F6246B8D9200BC70B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FAF1F5246B8D9200BC70B8 /* Assets.xcassets */; };
 		01FAF1F9246B8D9200BC70B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FAF1F7246B8D9200BC70B8 /* LaunchScreen.storyboard */; };
 		01FAF204246B8D9200BC70B8 /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAF203246B8D9200BC70B8 /* MyAppTests.swift */; };
+		01FAF20D246B8E7100BC70B8 /* MyFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAF20C246B8E7100BC70B8 /* MyFramework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		01FAF1FF246B8D9200BC70B8 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FAF203246B8D9200BC70B8 /* MyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppTests.swift; sourceTree = "<group>"; };
 		01FAF205246B8D9200BC70B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01FAF20C246B8E7100BC70B8 /* MyFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFramework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				01FAF1CF246B8D7000BC70B8 /* MyFramework.h */,
 				01FAF1D0246B8D7000BC70B8 /* Info.plist */,
+				01FAF20C246B8E7100BC70B8 /* MyFramework.swift */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				TargetAttributes = {
 					01FAF1CB246B8D7000BC70B8 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					01FAF1D4246B8D7000BC70B8 = {
 						CreatedOnToolsVersion = 11.4;
@@ -322,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FAF20D246B8E7100BC70B8 /* MyFramework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,7 @@
 		01FAF1E1246B8D7000BC70B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
@@ -525,6 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = linhnguyen.MyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,6 +540,7 @@
 		01FAF1E2246B8D7000BC70B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
@@ -557,6 +565,7 @@
 		01FAF1E4246B8D7000BC70B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
 				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
@@ -575,6 +584,7 @@
 		01FAF1E5246B8D7000BC70B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
 				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
